@@ -1,0 +1,25 @@
+.App {
+  position: absolute; /* turn off */
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+#topMenu{
+  position: fixed;
+}
+#me{
+  margin-left: 50%;
+}
+.link{
+  text-decoration: none;
+  color:green;
+}
+#slide{
+  background-color:aqua;
+}
+.slider{
+  color:white;
+}
