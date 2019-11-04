@@ -6,9 +6,7 @@ function Projects(){
   const [color,setColor] = React.useState('aqua');
   const colors = ['aqua','lightgreen','rgb(255,38,67)'];
   function handler(e){
-    console.log(e);
-    var nextSlide = (e.currentIndex==e.slides-1)?0:e.currentIndex+1; //if our slider is inf
-    setColor(colors[nextSlide]);
+    setColor(colors[e.currentIndex]);
   }
   function openGithub(project){
     window.open(`https://github.com/nagayev/${project}`);
@@ -16,7 +14,7 @@ function Projects(){
   return (
     <>
     <h2 style={{color:color}}>Projects</h2>
-    <AwesomeSlider className="slider" onTransitionStart={handler}> 
+    <AwesomeSlider className="slider" onTransitionEnd={handler}> 
       <div id="slideCalculator" onClick={()=>openGithub('wasm')}>
       <h1 className="header">Webassembly calculator</h1>
       Calculator, written in WASM with support of Posit Numbers.

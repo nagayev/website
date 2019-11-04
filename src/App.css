@@ -12,7 +12,10 @@
   .App-logo {
     height: 40vmin;
   }
-  
+  #about{
+      text-align: left;
+      margin-left: 30%;
+  }
   #topMenu{
     position: fixed;
   }
