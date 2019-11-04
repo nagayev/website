@@ -1,11 +1,10 @@
 @font-face {
     font-family: 'Montserrat';
     src: local('Montserrat'), local('Montserrat-Regular'), url('montserrat.woff2') format('woff2'), url('montserrat.woff') format('woff'), url('montserrat.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
   }
   .App {
-    /*position: absolute; */ /* turn off */
     text-align: center;
     font-family: 'Montserrat';
   }
@@ -18,11 +17,21 @@
     position: fixed;
   }
   #me{
-    margin-left: 50%;
+    margin-right: 20%;
+    width:100px;
+    height:100px;
+    float:right;
   }
-  .link{
+  a{
     text-decoration: none;
     color:green;
+  }
+  #bottom{
+      color:white;
+      background-color:lightgray;
+  }
+  #bottom a{
+      color:white;
   }
   #slideCalculator{
     background-color:aqua;
@@ -30,10 +39,12 @@
   #slideEcology{
       background-color: lightgreen;
   }
+  #contacts{
+      background-color:lightgrey;
+  }
   #slideCoderbook{
-    background-color: red;
+    background-color:rgb(255,38,67); /*nice red*/
   }
   .slider{
     color:white;
   }
-  

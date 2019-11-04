@@ -1,17 +1,17 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import Slider from './Slider';
+import Projects from './Projects';
 import me from './me.jpg';
 
-function Site(props){
-  //type and user
+function User(props){
+  //type and id
   let url = 'https://';
-  if(props.type==="vk") url+=`vk.com/${props.user}`;
-  else if(props.type==="fb") url+=`fb.com/profile.php?id=${props.user}`;
-  else if(props.type==="github") url+=`github.com/${props.user}`;
-  else if(props.type==="gitlab") url+=`gitlab.com/${props.user}`;
-  else if(props.type==="habr") url+=`habr.com/ru/users/${props.user}`;
+  if(props.type==="vk") url+=`vk.com/${props.id}`;
+  else if(props.type==="fb") url+=`fb.com/profile.php?id=${props.id}`;
+  else if(props.type==="github") url+=`github.com/${props.id}`;
+  else if(props.type==="gitlab") url+=`gitlab.com/${props.id}`;
+  else if(props.type==="habr") url+=`habr.com/ru/ids/${props.id}`;
   return (
     <a href={url}>{props.type}</a>
   );
@@ -19,7 +19,7 @@ function Site(props){
 function MenuItem(props){
   return (
     <>
-      <a class="link" href={"#"+props.text}>{props.text}</a> &nbsp;
+      <a href={"#"+props.text}>{props.text}</a> &nbsp;
     </>    
   );
 }
@@ -41,12 +41,21 @@ function App() {
         <p>Original from Penza, Russia</p>
         <p>Education: 2 Lyceum of Modern Technologyies, Penza</p>
       </div>
-      <h2 id="projects">Projects</h2>
-      <Slider />
-      <br />
-      <h2 id="contacts">Contacts</h2>
-      <p>Social networks: <Site type="vk" user="bestvkhacker" /> <Site type="fb" user="100010223490380" /> <Site type="habr" user="enmar" /></p>
-      <p>Developer's sites: <Site type="github" user="nagayev" /> <Site type="gitlab" user="nagayev" /></p>
+      <div id="projects">
+        <Projects />
+        <br />
+      </div>
+      <div id="contacts">
+        <h2>Contacts</h2>
+        <p>Social networks: <User type="vk" id="bestvkhacker" /> <User type="fb" id="100010223490380" /> <User type="habr" id="enmar" /></p>
+        <p>Developer's Users: <User type="github" id="nagayev" /> <User type="gitlab" id="nagayev" /></p>
+      </div>
+      
+      <div id="bottom">
+      nagayev.ru, 2019
+      Licensed under MIT License <br />
+      Source code are available <a href="https://github.com/nagayev/webUser">here</a>
+      </div>
     </div>
   );
 }
