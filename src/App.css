@@ -24,8 +24,14 @@
     text-decoration: none;
     color:green;
   }
-  #slide{
+  #slideCalculator{
     background-color:aqua;
+  }
+  #slideEcology{
+      background-color: lightgreen;
+  }
+  #slideCoderbook{
+    background-color: red;
   }
   .slider{
     color:white;

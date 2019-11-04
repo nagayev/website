@@ -11,15 +11,15 @@ function Slider(){
     }); */
   return (
     <AwesomeSlider className="slider" selected={slide}> 
-      <div id="slide">
+      <div id="slideCalculator">
       <h1 className="header">Webassembly calculator</h1>
       Calculator, written in WASM with support of Posit Numbers.
       </div>
-      <div id="slide">
+      <div id="slideEcology">
       <h1 className="header">Ecology game</h1>
       Ecology game with eco map and lots of fun!
       </div>
-      <div id="slide">
+      <div id="slideCoderbook">
       <h1 className="header">Coderbook</h1>
       I'm coauthor of Coder book - tutorial for coders.
       This app provides cources about programming languages. 

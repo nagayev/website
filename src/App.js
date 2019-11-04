@@ -4,13 +4,14 @@ import './App.css';
 import Slider from './Slider';
 import me from './me.jpg';
 
-function SocialNetwork(props){
+function Site(props){
   //type and user
   let url = 'https://';
   if(props.type==="vk") url+=`vk.com/${props.user}`;
   else if(props.type==="fb") url+=`fb.com/profile.php?id=${props.user}`;
   else if(props.type==="github") url+=`github.com/${props.user}`;
   else if(props.type==="gitlab") url+=`gitlab.com/${props.user}`;
+  else if(props.type==="habr") url+=`habr.com/ru/users/${props.user}`;
   return (
     <a href={url}>{props.type}</a>
   );
@@ -44,8 +45,8 @@ function App() {
       <Slider />
       <br />
       <h2 id="contacts">Contacts</h2>
-      <p>Social networks: <SocialNetwork type="vk" user="bestvkhacker" /> <SocialNetwork type="fb" user="100010223490380" /></p>
-      <p>Developer's sites: <SocialNetwork type="github" user="nagayev" /> <SocialNetwork type="gitlab" user="nagayev" /></p>
+      <p>Social networks: <Site type="vk" user="bestvkhacker" /> <Site type="fb" user="100010223490380" /> <Site type="habr" user="enmar" /></p>
+      <p>Developer's sites: <Site type="github" user="nagayev" /> <Site type="gitlab" user="nagayev" /></p>
     </div>
   );
 }
