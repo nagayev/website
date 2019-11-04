@@ -23,6 +23,7 @@ function MenuItem(props){
   );
 }
 function App() {
+  //const language = navigator.language.slice(0,2); //use it i the future
   return (
     <div className="App">
       <div id="wrapper">
@@ -36,7 +37,7 @@ function App() {
       <img id="me" src={me} alt="" />
       <div id="about">
         <p>Hello! I'm Marat Nagayev, frontend developer.</p>
-        <p>Birth place: Penza, Russia</p>
+        <p>Original from Penza, Russia</p>
         <p>Education: 2 Lyceum of Modern Technologyies, Penza</p>
       </div>
       <h2 id="projects">Projects</h2>
@@ -48,5 +49,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

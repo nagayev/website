@@ -13,15 +13,16 @@ function Slider(){
     <AwesomeSlider className="slider" selected={slide}> 
       <div id="slide">
       <h1 className="header">Webassembly calculator</h1>
-      Calculator, written in WASM.
+      Calculator, written in WASM with support of Posit Numbers.
       </div>
       <div id="slide">
-      <h1 className="header">Ecology app</h1>
-      Ecology map
+      <h1 className="header">Ecology game</h1>
+      Ecology game with eco map and lots of fun!
       </div>
       <div id="slide">
-      <h1 className="header">This website</h1>
-      Using react, next.js & zeit.co
+      <h1 className="header">Coderbook</h1>
+      I'm coauthor of Coder book - tutorial for coders.
+      This app provides cources about programming languages. 
       </div>
     </AwesomeSlider>
   );
