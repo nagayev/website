@@ -1,32 +1,33 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: local('Montserrat'), local('Montserrat-Regular'), url('montserrat.woff2') format('woff2'), url('montserrat.woff') format('woff'), url('montserrat.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-.App {
-  /*position: absolute; */ /* turn off */
-  text-align: center;
-  font-family: 'Montserrat';
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-#topMenu{
-  position: fixed;
-}
-#me{
-  margin-left: 50%;
-}
-.link{
-  text-decoration: none;
-  color:green;
-}
-#slide{
-  background-color:aqua;
-}
-.slider{
-  color:white;
-}
+    font-family: 'Montserrat';
+    src: local('Montserrat'), local('Montserrat-Regular'), url('montserrat.woff2') format('woff2'), url('montserrat.woff') format('woff'), url('montserrat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  .App {
+    /*position: absolute; */ /* turn off */
+    text-align: center;
+    font-family: 'Montserrat';
+  }
+  
+  .App-logo {
+    height: 40vmin;
+  }
+  
+  #topMenu{
+    position: fixed;
+  }
+  #me{
+    margin-left: 50%;
+  }
+  .link{
+    text-decoration: none;
+    color:green;
+  }
+  #slide{
+    background-color:aqua;
+  }
+  .slider{
+    color:white;
+  }
+  
