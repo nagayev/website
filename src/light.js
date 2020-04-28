@@ -18,14 +18,15 @@ const app = {
     textAlign: 'center',
     fontFamily: 'Montserrat'
 }
-const slider = {
-    backgroundColor:'black'
+const languages = {
+    float:'right',
+    marginRight:'5%'
 }
 let light = {
     a:a,
     about:about,
     app:app,
     me:me,
-    slider:slider
+    languages:languages
 }
 export default light;

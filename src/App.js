@@ -2,7 +2,7 @@ import React from 'react';
 //import logo from './logo.svg';
 //import './App.css';
 import dark from './dark';
-//import light from './light'; //FIXME: experimental
+import light from './light'; //FIXME: experimental
 import Projects from './Projects';
 import me from './me.jpg';
 

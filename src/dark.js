@@ -24,15 +24,26 @@ const app = {
     fontFamily: 'Montserrat'
 }
 const languages = {
-    //color:'red',
     float:'right',
     marginRight:'5%'
+}
+const coderbook = {
+    backgroundColor:'gray' //'rgb(255,38,67)'
+}
+const calculator = {
+    backgroundColor:'darkgrey'
+}
+const arduino = {
+    backgroundColor:'dimgray'
 }
 let dark = {
     a:a,
     about:about,
     app:app,
     me:me,
-    languages:languages
+    languages:languages,
+    coderbook:coderbook,
+    calculator:calculator,
+    arduino:arduino
 }
 export default dark;
