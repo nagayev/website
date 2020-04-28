@@ -2,6 +2,7 @@ import React from 'react';
 //import logo from './logo.svg';
 //import './App.css';
 import dark from './dark';
+//import light from './light'; //FIXME: experimental
 import Projects from './Projects';
 import me from './me.jpg';
 
@@ -39,14 +40,17 @@ function App() {
   else if(theme==="classic") console.log('classic') */
   return (
     <div className="App" style={style.app}>
+      <div style={style.languages}>
+        en ru
+      </div>
       <h1>Marat Nagayev</h1>
-      <img id="me" src={me} alt="Marat Nagayev" style={style.me} />
+        <img id="me" src={me} alt="Marat Nagayev" style={style.me} />
       <div id="about" style={style.about}>
         <p>Hello! I'm Marat Nagayev, frontend developer.</p>
         <p>Original from Penza, Russia</p>
         <p>Education: 2 Lyceum of Modern Technologyies, Penza</p>
         <p>Love JavaScript, NodeJS and Golang.</p>
-      </div>
+      </div><br />
       <div id="projects">
         <Projects />
         <br />
@@ -59,8 +63,7 @@ function App() {
       </div>
       
       <div id="bottom">
-      nagayev.ru, 2019 <br />
-      Licensed under MIT License <br />
+      nagayev.ru, 2019-2020 <br />
       Source code are available <a style={style.a} href="https://github.com/nagayev/website">here</a>
       </div>
     </div>

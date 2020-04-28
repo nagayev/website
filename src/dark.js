@@ -14,7 +14,7 @@ const about = {
     marginLeft: '30%'
 }
 const a = {
-    textDecoration: 'none',
+    //textDecoration: 'none',
     color:'white'
 }
 const app = {
@@ -23,10 +23,16 @@ const app = {
     textAlign: 'center',
     fontFamily: 'Montserrat'
 }
+const languages = {
+    //color:'red',
+    float:'right',
+    marginRight:'5%'
+}
 let dark = {
     a:a,
     about:about,
     app:app,
     me:me,
+    languages:languages
 }
 export default dark;
