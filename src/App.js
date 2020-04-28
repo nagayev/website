@@ -1,11 +1,16 @@
 import React from 'react';
 //import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import dark from './dark';
 import Projects from './Projects';
 import me from './me.jpg';
 
+function getCurrentTheme(){
+  return dark;
+}
 function User(props){
   //type and id
+  const style = getCurrentTheme();
   let url = 'https://';
   if(props.type==="vk") url+=`vk.com/${props.id}`;
   else if(props.type==="fb") url+=`fb.com/profile.php?id=${props.id}`;
@@ -14,30 +19,29 @@ function User(props){
   else if(props.type==="habr") url+=`habr.com/ru/ids/${props.id}`;
   else if(props.type==="stack") url+=`stackoverflow.com/users/8531190/${props.id}`;
   return (
-    <a href={url}>{props.type}</a>
+    <a style={style.a} href={url}>{props.type}</a>
   );
 }
+/*
 function MenuItem(props){
   return (
     <>
       <a href={"#"+props.text}>{props.text}</a> &nbsp;
     </>    
   );
-}
+} */
 function App() {
+  const style = getCurrentTheme();
   //const language = navigator.language.slice(0,2); //use it i the future
+  /*
+  const [theme,setTheme] = React.useState('dark')
+  if(theme==="dark") console.log('dark');
+  else if(theme==="classic") console.log('classic') */
   return (
-    <div className="App">
-      <div id="wrapper">
-      <div id="topMenu">
-        <MenuItem text="about" />
-        <MenuItem text="projects" /> 
-        <MenuItem text="contacts" /> <br />
-      </div>
-      </div>
+    <div className="App" style={style.app}>
       <h1>Marat Nagayev</h1>
-      <img id="me" src={me} alt="Marat Nagayev" />
-      <div id="about">
+      <img id="me" src={me} alt="Marat Nagayev" style={style.me} />
+      <div id="about" style={style.about}>
         <p>Hello! I'm Marat Nagayev, frontend developer.</p>
         <p>Original from Penza, Russia</p>
         <p>Education: 2 Lyceum of Modern Technologyies, Penza</p>
@@ -57,7 +61,7 @@ function App() {
       <div id="bottom">
       nagayev.ru, 2019 <br />
       Licensed under MIT License <br />
-      Source code are available <a href="https://github.com/nagayev/webUser">here</a>
+      Source code are available <a style={style.a} href="https://github.com/nagayev/website">here</a>
       </div>
     </div>
   );

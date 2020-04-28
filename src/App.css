@@ -5,6 +5,8 @@
     font-style: normal;
   }
   .App {
+    color:white;
+    background-color: black;
     text-align: center;
     font-family: 'Montserrat';
   }
@@ -16,23 +18,26 @@
       text-align: left;
       margin-left: 30%;
   }
-  #topMenu{
-    position: fixed;
-  }
   #me{
     margin-right: 20%;
     width:100px;
     height:100px;
     float:right;
+    -moz-filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+    -o-filter:grayscale(100%);
+    -ms-filter:grayscale(100%);
+    filter:grayscale(100%); 
   }
   a{
     text-decoration: none;
-    color:green;
+    color:white; /*insted of green */
   }
+  /*
   #bottom{
       color:white;
       background-color:lightgray;
-  }
+  } 
   #bottom a{
       color:white;
   }
@@ -44,10 +49,10 @@
   }
   #contacts{
       background-color:lightgrey;
-  }
+  } 
   #slideCoderbook{
-    background-color:rgb(255,38,67); /*nice red*/
+    background-color:rgb(255,38,67); 
   }
   .slider{
     color:white;
-  }
+  }  */
