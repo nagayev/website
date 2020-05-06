@@ -1,7 +1,6 @@
 import React from 'react';
-import AwesomeSlider from '../node_modules/react-awesome-slider';
-import '../node_modules/react-awesome-slider/dist/styles.css';
-import dark from './dark';
+import Slider from './Slider';
+import Tiles from './Tiles';
 
 function Projects(){
   /*
@@ -10,31 +9,17 @@ function Projects(){
   function handler(e){
     setColor(colors[e.currentIndex]);
   } */
-  const style = dark;
-  function openGithub(project){
-    window.open(`https://github.com/nagayev/${project}`);
-  }
+  const [tag,setTag] = React.useState(<Slider />); //0 is personal, 1 is ach
   //const styles = {backgroundColor:color};
+  //const tag = (!active)?Slider:Tiles;
+  const activateProjects = () => setTag(<Slider />);
+  const activateAchivments = () => setTag(<Tiles />);
   return (
     <>
     <br />
-    <h1 style={{color:'white'}}>Personal Projects</h1>
-    <AwesomeSlider className="slider" /*onTransitionEnd={handler} */ > 
-      <div style={style.calculator} onClick={()=>openGithub('wasm')}>
-      <h1 className="header">Webassembly calculator</h1>
-      Calculator, written in WASM with support of Posit Numbers.
-      </div>
-      <div style={style.arduino} onClick={()=>openGithub('arduino-emulator')}>
-      <h1 className="header">Arduino Emulator</h1>
-      Online Arduino's Emulator <br />
-      From mini to UNO!
-      </div>
-      <div style={style.coderbook} onClick={()=>openGithub('coderbook')}>
-      <h1 className="header">Coderbook</h1>
-      I'm coauthor of Coder book - tutorial for coders. <br />
-      This app provides cources about programming languages. 
-      </div>
-    </AwesomeSlider>
+    <h2 style={{color:'white'}} onClick={activateProjects}>Personal Projects</h2> 
+    <h2 onClick={activateAchivments}>Achivments</h2>
+    {tag}
     </>
   );
 }
