@@ -18,7 +18,7 @@ function Projects(){
   return (
     <>
     <br />
-    <h1 style={{color:'white'}}>Projects</h1>
+    <h1 style={{color:'white'}}>Personal Projects</h1>
     <AwesomeSlider className="slider" /*onTransitionEnd={handler} */ > 
       <div style={style.calculator} onClick={()=>openGithub('wasm')}>
       <h1 className="header">Webassembly calculator</h1>

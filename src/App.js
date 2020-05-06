@@ -23,14 +23,6 @@ function User(props){
     <a style={style.a} href={url}>{props.type}</a>
   );
 }
-/*
-function MenuItem(props){
-  return (
-    <>
-      <a href={"#"+props.text}>{props.text}</a> &nbsp;
-    </>    
-  );
-} */
 function App() {
   const style = getCurrentTheme();
   //const language = navigator.language.slice(0,2); //use it i the future
@@ -41,7 +33,7 @@ function App() {
   return (
     <div className="App" style={style.app}>
       <div style={style.languages}>
-        en ru
+        <a style={style.dots} href="#">en</a> <a style={style.dots} href="#">ru</a>
       </div>
       <h1>Marat Nagayev</h1>
         <img id="me" src={me} alt="Marat Nagayev" style={style.me} />

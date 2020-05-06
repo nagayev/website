@@ -36,6 +36,10 @@ const calculator = {
 const arduino = {
     backgroundColor:'dimgray'
 }
+const dots = {
+    textDecoration:'underline',
+    color:'white'
+}
 let dark = {
     a:a,
     about:about,
@@ -44,6 +48,7 @@ let dark = {
     languages:languages,
     coderbook:coderbook,
     calculator:calculator,
-    arduino:arduino
+    arduino:arduino,
+    dots:dots
 }
 export default dark;
