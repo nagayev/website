@@ -1,13 +1,15 @@
 {
-  "name": "my-app",
+  "name": "website",
   "version": "0.1.0",
   "homepage": ".",
   "private": true,
   "dependencies": {
-    "metro4-react": "^0.1.4",
     "react": "^16.11.0",
     "react-awesome-slider": "^2.1.1",
+    "react-card-flip": "^1.0.10",
     "react-dom": "^16.11.0",
+    "react-flexbox-grid": "^2.1.2",
+    "react-grid-layout": "^0.18.3",
     "react-scripts": "3.2.0"
   },
   "scripts": {

@@ -1,28 +1,32 @@
 import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import ReactCardFlip from 'react-card-flip';
 function Tile(props){
-    const styles = {
-        width:'100%',
-        height:'100%',
-        borderColor:'white',
-        borderStyle:'solid'
-    }
-    const [active,setActive] = React.useState(props.active);
-    const toggle = () => (active==props.active)?setActive(props.backside):setActive(props.active);
+    const [isFlipped,setFlip] = React.useState(false);
+    const t = () => setFlip(!isFlipped);
     return (
-        <div style={styles} onClick={toggle}>
-            {active}
+        <div key={props.key}>
+            <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+                <span onClick={t}>{props.active}</span>
+                <span onClick={t}>{props.backside}</span>
+            </ReactCardFlip>
         </div>
     );
 }
 function Tiles(){
-    const styles = {
-        width:'100%',
-        height:'100%'
-    }
+    const offsets = [11,10,9,8];
+    const xss = [1,2,3,4];
+    const actives = ["Habr","Yalp Store","Coder Book","Jimp"];
+    const backsides = ["50k watches","25 issues","Author of course","Fix bug in doc"];
+    const tiles = actives.map((value,i)=>
+    <Col xsOffset={0} xs={xss[i]}><Tile active={value} backside={backsides[i]} key={i} /></Col>
+    );
     return (
-        <div style={styles}>
-             <Tile active="Habr" backside="13k watches" />
-        </div>
+        <Grid fluid>
+          <Row>
+            {tiles}
+          </Row>
+        </Grid>
     );
 }
 export default Tiles;
