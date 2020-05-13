@@ -1,10 +1,11 @@
 import React from "react";
+
 //import logo from './logo.svg';
 //import './App.css';
 import dark from "./dark";
-import light from "./light"; //FIXME: experimental
-import Projects from "./Projects";
+// import light from "./light"; //FIXME: experimental
 import me from "./me.jpg";
+import Projects from "./Projects";
 
 function getCurrentTheme() {
   return dark;
@@ -13,13 +14,20 @@ function User(props) {
   //type and id
   const style = getCurrentTheme();
   let url = "https://";
-  if (props.type === "vk") url += `vk.com/${props.id}`;
-  else if (props.type === "fb") url += `fb.com/profile.php?id=${props.id}`;
-  else if (props.type === "github") url += `github.com/${props.id}`;
-  else if (props.type === "gitlab") url += `gitlab.com/${props.id}`;
-  else if (props.type === "habr") url += `habr.com/ru/ids/${props.id}`;
-  else if (props.type === "stack")
+  if (props.type === "vk") {
+    url += `vk.com/${props.id}`;
+  } else if (props.type === "fb") {
+    url += `fb.com/profile.php?id=${props.id}`;
+  } else if (props.type === "github") {
+    url += `github.com/${props.id}`;
+  } else if (props.type === "gitlab") {
+    url += `gitlab.com/${props.id}`;
+  } else if (props.type === "habr") {
+    url += `habr.com/ru/ids/${props.id}`;
+  } else if (props.type === "stack") {
     url += `stackoverflow.com/users/8531190/${props.id}`;
+  }
+
   return (
     <a style={style.a} href={url}>
       {props.type}
@@ -46,7 +54,7 @@ function App() {
       <h1>Marat Nagayev</h1>
       <img id="me" src={me} alt="Marat Nagayev" style={style.me} />
       <div id="about" style={style.about}>
-        <p>Hello! I'm Marat Nagayev, frontend developer.</p>
+        <p>Hello! I’m Marat Nagayev, frontend developer.</p>
         <p>Original from Penza, Russia</p>
         <p>Education: 2 Lyceum of Modern Technologyies, Penza</p>
         <p>Love JavaScript, NodeJS and Golang.</p>
@@ -64,7 +72,7 @@ function App() {
           <User type="habr" id="enmar" />
         </p>
         <p>
-          Developer's Sites: <User type="github" id="nagayev" />{" "}
+          Developer’s Sites: <User type="github" id="nagayev" />{" "}
           <User type="gitlab" id="nagayev" /> &nbsp;
           <User type="stack" id="marat-nagayev" />
         </p>

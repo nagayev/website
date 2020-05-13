@@ -22,11 +22,11 @@ const languages = {
   float: "right",
   marginRight: "5%",
 };
-let light = {
-  a: a,
-  about: about,
-  app: app,
-  me: me,
-  languages: languages,
+const light = {
+  a,
+  about,
+  app,
+  me,
+  languages,
 };
 export default light;

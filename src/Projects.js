@@ -1,7 +1,8 @@
 import React from "react";
+import ReactCardFlip from "react-card-flip";
+
 import Slider from "./Slider";
 import Tiles from "./Tiles";
-import ReactCardFlip from "react-card-flip";
 
 function Projects() {
   /*
