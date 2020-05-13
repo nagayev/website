@@ -1,25 +1,18 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": ".",
   "private": true,
-  "dependencies": {
-    "react": "^16.11.0",
-    "react-awesome-slider": "^2.1.1",
-    "react-card-flip": "^1.0.10",
-    "react-dom": "^16.11.0",
-    "react-flexbox-grid": "^2.1.2",
-    "react-grid-layout": "^0.18.3",
-    "react-scripts": "3.2.0"
-  },
+  "homepage": ".",
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "eject": "react-scripts eject",
+    "fix": "yarn fix:prettier;",
+    "fix:prettier": "prettier --write .",
+    "lint": "yarn lint:prettier",
+    "lint:prettier": "prettier --check .",
+    "lint:tsc": "tsc --noEmit --project .",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [
@@ -32,5 +25,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-awesome-slider": "^2.1.1",
+    "react-card-flip": "^1.0.10",
+    "react-dom": "^16.13.1",
+    "react-flexbox-grid": "^2.1.2",
+    "react-grid-layout": "^0.18.3",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "prettier-plugin-packagejson": "^2.2.3"
   }
 }
