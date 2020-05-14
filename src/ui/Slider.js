@@ -1,5 +1,3 @@
-import "react-awesome-slider/dist/styles.css";
-
 import React from "react";
 import AwesomeSlider from "react-awesome-slider";
 

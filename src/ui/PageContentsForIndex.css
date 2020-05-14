@@ -8,15 +8,11 @@
   font-style: normal;
 }
 
-.App {
+body {
   color: white;
   background-color: black;
   text-align: center;
   font-family: "Montserrat";
-}
-
-.App-logo {
-  height: 40vmin;
 }
 
 #about {

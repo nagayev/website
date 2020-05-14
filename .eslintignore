@@ -15,6 +15,7 @@ LICENSE
 /coverage
 
 # production
+/.next
 /build
 
 # misc

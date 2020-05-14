@@ -31,10 +31,10 @@ function User(props) {
     </a>
   );
 }
-function App() {
+function Root() {
   const style = dark;
   return (
-    <div className="App" style={style.app}>
+    <div style={style.root}>
       <div style={style.languages}>
         <a style={style.dots} href="#">
           en
@@ -80,4 +80,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default Root;

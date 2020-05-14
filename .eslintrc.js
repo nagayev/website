@@ -54,4 +54,12 @@ module.exports = {
   settings: {
     react: { version: "detect" },
   },
+  overrides: [
+    {
+      files: ["*.js"],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
+  ],
 };

@@ -17,7 +17,8 @@
 .pnp.js
 
 # testing
-/coverage
+/.next
+/build
 
 # production
 /build
