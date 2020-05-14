@@ -1,6 +1,8 @@
+import "react-awesome-slider/dist/styles.css";
+
 import React from "react";
-import AwesomeSlider from "../node_modules/react-awesome-slider";
-import "../node_modules/react-awesome-slider/dist/styles.css";
+import AwesomeSlider from "react-awesome-slider";
+
 import dark from "./dark";
 
 function openGithub(project) {
@@ -16,12 +18,12 @@ function Slider() {
       </div>
       <div style={style.arduino} onClick={() => openGithub("arduino-emulator")}>
         <h1 className="header">Arduino Emulator</h1>
-        Online Arduino's Emulator <br />
+        Online Arduino’s Emulator <br />
         From mini to UNO!
       </div>
       <div style={style.coderbook} onClick={() => openGithub("coderbook")}>
         <h1 className="header">Coderbook</h1>
-        I'm coauthor of Coder book - tutorial for coders. <br />
+        I’m coauthor of Coder book - tutorial for coders. <br />
         This app provides cources about programming languages.
       </div>
     </AwesomeSlider>

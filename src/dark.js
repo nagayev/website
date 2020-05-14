@@ -40,15 +40,15 @@ const dots = {
   textDecoration: "underline",
   color: "white",
 };
-let dark = {
-  a: a,
-  about: about,
-  app: app,
-  me: me,
-  languages: languages,
-  coderbook: coderbook,
-  calculator: calculator,
-  arduino: arduino,
-  dots: dots,
+const dark = {
+  a,
+  about,
+  app,
+  me,
+  languages,
+  coderbook,
+  calculator,
+  arduino,
+  dots,
 };
 export default dark;
