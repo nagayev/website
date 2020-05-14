@@ -3,7 +3,7 @@
   "homepage": ".",
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "next",
     "fix": "yarn fix:eslint; yarn fix:prettier",
     "fix:eslint": "eslint --fix \"**/*\"",
     "fix:prettier": "prettier --write .",
@@ -28,12 +28,6 @@
       "eslint --fix",
       "prettier --write"
     ]
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/src/__mocks__/styleMock.js"
-    }
   },
   "dependencies": {
     "next": "^9.4.0",

@@ -6,6 +6,9 @@ LICENSE
 !*.ts
 !*.tsx
 
+
+## same as in .gitignore
+
 # dependencies
 /node_modules
 /.pnp

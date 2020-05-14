@@ -17,10 +17,10 @@
 .pnp.js
 
 # testing
-/.next
-/build
+/coverage
 
 # production
+/.next
 /build
 
 # misc

@@ -17,7 +17,7 @@ const a = {
   //textDecoration: 'none',
   color: "white",
 };
-const root = {
+const pageLayout = {
   backgroundColor: "black",
   color: "white",
   textAlign: "center",
@@ -43,7 +43,7 @@ const dots = {
 const dark = {
   a,
   about,
-  root,
+  pageLayout,
   me,
   languages,
   coderbook,

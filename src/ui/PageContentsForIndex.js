@@ -31,10 +31,10 @@ function User(props) {
     </a>
   );
 }
-function Root() {
+function PageContentsForIndex() {
   const style = dark;
   return (
-    <div style={style.root}>
+    <div style={style.pageLayout}>
       <div style={style.languages}>
         <a style={style.dots} href="#">
           en
@@ -80,4 +80,4 @@ function Root() {
     </div>
   );
 }
-export default Root;
+export default PageContentsForIndex;

@@ -12,7 +12,7 @@ const a = {
   //textDecoration: 'none',
   color: "black",
 };
-const root = {
+const pageLayout = {
   backgroundColor: "white",
   color: "black",
   textAlign: "center",
@@ -25,7 +25,7 @@ const languages = {
 const light = {
   a,
   about,
-  root,
+  pageLayout,
   me,
   languages,
 };
