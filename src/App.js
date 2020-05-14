@@ -1,9 +1,5 @@
 import React from "react";
-
-//import logo from './logo.svg';
-//import './App.css';
 import dark from "./dark";
-// import light from "./light"; //FIXME: experimental
 import me from "./me.jpg";
 import Projects from "./Projects";
 
@@ -35,12 +31,7 @@ function User(props) {
   );
 }
 function App() {
-  const style = getCurrentTheme();
-  //const language = navigator.language.slice(0,2); //use it i the future
-  /*
-  const [theme,setTheme] = React.useState('dark')
-  if(theme==="dark") console.log('dark');
-  else if(theme==="classic") console.log('classic') */
+  const style = dark;
   return (
     <div className="App" style={style.app}>
       <div style={style.languages}>
@@ -57,7 +48,7 @@ function App() {
         <p>Hello! I’m Marat Nagayev, frontend developer.</p>
         <p>Original from Penza, Russia</p>
         <p>Education: 2 Lyceum of Modern Technologyies, Penza</p>
-        <p>Love JavaScript, NodeJS and Golang.</p>
+        <p>Love JavaScript, NodeJS and TypeScript.</p>
       </div>
       <br />
       <div id="projects">
