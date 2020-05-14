@@ -12,7 +12,7 @@ function Projects() {
     setTag(<Tiles />);
     t();
   };
-  const deactivateAchivments = () => {
+  const deactivateAchievements = () => {
     setTag(<Slider />);
     t();
   };
@@ -23,7 +23,7 @@ function Projects() {
         <h2 style={{ color: "white" }} onClick={deactivateProjects}>
           Personal Projects
         </h2>
-        <h2 onClick={deactivateAchivments}>Achivments</h2>
+        <h2 onClick={deactivateAchievements}>Achievements</h2>
       </ReactCardFlip>
       {tag}
     </>

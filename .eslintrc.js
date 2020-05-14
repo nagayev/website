@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    "react-app",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
