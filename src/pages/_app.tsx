@@ -2,10 +2,11 @@ import "react-awesome-slider/dist/styles.css";
 import "../ui/index.css";
 import "../ui/PageContentsForIndex.css";
 
+import { AppProps } from "next/app";
 import Head from "next/head";
 import React from "react";
 
-const App = ({ Component, pageProps }) => {
+const App: React.FunctionComponent<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>

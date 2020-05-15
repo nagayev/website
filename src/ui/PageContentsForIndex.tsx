@@ -1,3 +1,4 @@
+import { NextPage } from "next";
 import React from "react";
 
 import dark from "./dark";
@@ -40,7 +41,7 @@ const User: React.FunctionComponent<UserProps> = (props) => {
   );
 };
 
-const PageContentsForIndex: React.FunctionComponent = () => {
+const PageContentsForIndex: NextPage = () => {
   const style = dark;
   return (
     <div style={style.pageLayout}>

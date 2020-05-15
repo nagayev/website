@@ -4,13 +4,13 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "fix": "yarn fix:eslint; yarn fix:prettier",
+    "fix": "npm run fix:eslint; npm run fix:prettier",
     "fix:eslint": "eslint --fix \"**/*\"",
     "fix:prettier": "prettier --write .",
-    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:tsc",
     "lint:eslint": "eslint \"**/*\" --report-unused-disable-directives",
     "lint:prettier": "prettier --check .",
-    "lint:tsc": "tsc --noEmit --project .",
+    "lint:tsc": "tsc --project .",
     "start": "next start",
     "test": "jest"
   },
