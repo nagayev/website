@@ -1,14 +1,13 @@
-import "react-awesome-slider/dist/styles.css";
-
 import React from "react";
 import AwesomeSlider from "react-awesome-slider";
 
 import dark from "./dark";
 
-function openGithub(project) {
+const openGithub = (project: string) => {
   window.open(`https://github.com/nagayev/${project}`);
-}
-function Slider() {
+};
+
+const Slider: React.FunctionComponent = () => {
   const style = dark;
   return (
     <AwesomeSlider className="slider" /*onTransitionEnd={handler} */>
@@ -24,9 +23,10 @@ function Slider() {
       <div style={style.coderbook} onClick={() => openGithub("coderbook")}>
         <h1 className="header">Coderbook</h1>
         I’m coauthor of Coder book - tutorial for coders. <br />
-        This app provides cources about programming languages.
+        This app provides courses about programming languages.
       </div>
     </AwesomeSlider>
   );
-}
+};
+
 export default Slider;

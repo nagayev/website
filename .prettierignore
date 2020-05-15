@@ -1,5 +1,6 @@
 ## extensions
 *.*
+!*.css
 !*.js
 !*.json
 !*.md
@@ -19,6 +20,7 @@
 /coverage
 
 # production
+/.next
 /build
 
 # misc

@@ -1,12 +1,22 @@
+import { NextPage } from "next";
 import React from "react";
+
 import dark from "./dark";
 import me from "./me.jpg";
 import Projects from "./Projects";
 
-function getCurrentTheme() {
+const getCurrentTheme = () => {
   return dark;
+};
+
+type UserType = "vk" | "fb" | "habr" | "gitlab" | "github" | "stack";
+
+interface UserProps {
+  type: UserType;
+  id: string;
 }
-function User(props) {
+
+const User: React.FunctionComponent<UserProps> = (props) => {
   //type and id
   const style = getCurrentTheme();
   let url = "https://";
@@ -29,11 +39,12 @@ function User(props) {
       {props.type}
     </a>
   );
-}
-function App() {
+};
+
+const PageContentsForIndex: NextPage = () => {
   const style = dark;
   return (
-    <div className="App" style={style.app}>
+    <div style={style.pageLayout}>
       <div style={style.languages}>
         <a style={style.dots} href="#">
           en
@@ -78,5 +89,6 @@ function App() {
       </div>
     </div>
   );
-}
-export default App;
+};
+
+export default PageContentsForIndex;

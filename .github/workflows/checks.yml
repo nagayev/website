@@ -32,6 +32,9 @@ jobs:
       - name: Lint with prettier
         run: npm run lint:prettier
 
+      - name: Lint with tsc
+        run: npm run lint:tsc
+
   unit-tests:
     name: Unit tests
     runs-on: ubuntu-latest

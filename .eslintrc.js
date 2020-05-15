@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    "react-app",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -55,4 +54,12 @@ module.exports = {
   settings: {
     react: { version: "detect" },
   },
+  overrides: [
+    {
+      files: ["*.js"],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
+  ],
 };

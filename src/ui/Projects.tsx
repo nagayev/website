@@ -4,7 +4,7 @@ import ReactCardFlip from "react-card-flip";
 import Slider from "./Slider";
 import Tiles from "./Tiles";
 
-function Projects() {
+const Projects: React.FunctionComponent = () => {
   const [tag, setTag] = React.useState(<Slider />); //0 is personal, 1 is ach
   const [isFlipped, setFlip] = React.useState(false);
   const t = () => setFlip(!isFlipped);
@@ -12,10 +12,11 @@ function Projects() {
     setTag(<Tiles />);
     t();
   };
-  const deactivateAchivments = () => {
+  const deactivateAchievements = () => {
     setTag(<Slider />);
     t();
   };
+
   return (
     <>
       <br />
@@ -23,10 +24,11 @@ function Projects() {
         <h2 style={{ color: "white" }} onClick={deactivateProjects}>
           Personal Projects
         </h2>
-        <h2 onClick={deactivateAchivments}>Achivments</h2>
+        <h2 onClick={deactivateAchievements}>Achievements</h2>
       </ReactCardFlip>
       {tag}
     </>
   );
-}
+};
+
 export default Projects;

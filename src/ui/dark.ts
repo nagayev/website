@@ -1,15 +1,15 @@
-const me = {
+import { CSSProperties } from "react";
+
+const me: CSSProperties = {
   marginRight: "20%",
   width: "100px",
   height: "100px",
   float: "right",
-  MozFilter: "grayscale(100%)",
   WebkitFilter: "grayscale(100%)",
-  OFilter: "grayscale(100%)",
   msFilter: "grayscale(100%)",
   filter: "grayscale(100%)",
 };
-const about = {
+const about: CSSProperties = {
   textAlign: "left",
   marginLeft: "30%",
 };
@@ -17,33 +17,33 @@ const a = {
   //textDecoration: 'none',
   color: "white",
 };
-const app = {
+const pageLayout: CSSProperties = {
   backgroundColor: "black",
   color: "white",
   textAlign: "center",
   fontFamily: "Montserrat",
 };
-const languages = {
+const languages: CSSProperties = {
   float: "right",
   marginRight: "5%",
 };
-const coderbook = {
+const coderbook: CSSProperties = {
   backgroundColor: "gray", //'rgb(255,38,67)'
 };
-const calculator = {
+const calculator: CSSProperties = {
   backgroundColor: "darkgrey",
 };
-const arduino = {
+const arduino: CSSProperties = {
   backgroundColor: "dimgray",
 };
-const dots = {
+const dots: CSSProperties = {
   textDecoration: "underline",
   color: "white",
 };
 const dark = {
   a,
   about,
-  app,
+  pageLayout,
   me,
   languages,
   coderbook,

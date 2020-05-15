@@ -1,21 +1,35 @@
 import React from "react";
 import ReactCardFlip from "react-card-flip";
-import { Col, Grid, Row } from "react-flexbox-grid";
-function Tile(props) {
+
+// import { Col, Grid, Row } from "react-flexbox-grid";
+const Col = "div";
+const Grid = "div";
+const Row = "div";
+// react-flexbox-grid needs replacing, see
+// https://github.com/roylee0704/react-flexbox-grid/issues/173
+
+interface TileProps {
+  active: string;
+  backside: string;
+}
+
+const Tile: React.FunctionComponent<TileProps> = ({ active, backside }) => {
   const [isFlipped, setFlip] = React.useState(false);
   const t = () => setFlip(!isFlipped);
+
   return (
-    <div key={props.key}>
+    <div>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-        <span onClick={t}>{props.active}</span>
-        <span onClick={t}>{props.backside}</span>
+        <span onClick={t}>{active}</span>
+        <span onClick={t}>{backside}</span>
       </ReactCardFlip>
     </div>
   );
-}
-function Tiles() {
+};
+
+const Tiles: React.FunctionComponent = () => {
   // const offsets = [11, 10, 9, 8];
-  const xss = [1, 2, 3, 4];
+  // const xss = [1, 2, 3, 4];
   const actives = ["Habr", "Yalp Store", "Coder Book", "Jimp"];
   const backsides = [
     "50k watches",
@@ -24,14 +38,15 @@ function Tiles() {
     "Fix bug in doc",
   ];
   const tiles = actives.map((value, i) => (
-    <Col key={i} xsOffset={0} xs={xss[i]}>
+    <Col key={i} /* xsOffset={0} xs={xss[i]} */>
       <Tile active={value} backside={backsides[i]} key={i} />
     </Col>
   ));
   return (
-    <Grid fluid>
+    <Grid /* fluid */>
       <Row>{tiles}</Row>
     </Grid>
   );
-}
+};
+
 export default Tiles;

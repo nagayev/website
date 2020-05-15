@@ -6,6 +6,9 @@ LICENSE
 !*.ts
 !*.tsx
 
+
+## same as in .gitignore
+
 # dependencies
 /node_modules
 /.pnp
@@ -15,6 +18,7 @@ LICENSE
 /coverage
 
 # production
+/.next
 /build
 
 # misc
