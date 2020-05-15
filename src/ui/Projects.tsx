@@ -4,7 +4,7 @@ import ReactCardFlip from "react-card-flip";
 import Slider from "./Slider";
 import Tiles from "./Tiles";
 
-function Projects() {
+const Projects: React.FunctionComponent = () => {
   const [tag, setTag] = React.useState(<Slider />); //0 is personal, 1 is ach
   const [isFlipped, setFlip] = React.useState(false);
   const t = () => setFlip(!isFlipped);
@@ -16,6 +16,7 @@ function Projects() {
     setTag(<Slider />);
     t();
   };
+
   return (
     <>
       <br />
@@ -28,5 +29,6 @@ function Projects() {
       {tag}
     </>
   );
-}
+};
+
 export default Projects;

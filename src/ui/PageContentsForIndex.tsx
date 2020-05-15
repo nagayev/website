@@ -4,10 +4,18 @@ import dark from "./dark";
 import me from "./me.jpg";
 import Projects from "./Projects";
 
-function getCurrentTheme() {
+const getCurrentTheme = () => {
   return dark;
+};
+
+type UserType = "vk" | "fb" | "habr" | "gitlab" | "github" | "stack";
+
+interface UserProps {
+  type: UserType;
+  id: string;
 }
-function User(props) {
+
+const User: React.FunctionComponent<UserProps> = (props) => {
   //type and id
   const style = getCurrentTheme();
   let url = "https://";
@@ -30,8 +38,9 @@ function User(props) {
       {props.type}
     </a>
   );
-}
-function PageContentsForIndex() {
+};
+
+const PageContentsForIndex: React.FunctionComponent = () => {
   const style = dark;
   return (
     <div style={style.pageLayout}>
@@ -79,5 +88,6 @@ function PageContentsForIndex() {
       </div>
     </div>
   );
-}
+};
+
 export default PageContentsForIndex;
