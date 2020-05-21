@@ -2,6 +2,8 @@ import React from "react";
 import AwesomeSlider from "react-awesome-slider";
 
 import dark from "./dark";
+//import ReactCardFlip from "react-card-flip";
+import Tiles from "./Tiles";
 
 const openGithub = (project: string) => {
   window.open(`https://github.com/nagayev/${project}`);
@@ -9,6 +11,8 @@ const openGithub = (project: string) => {
 
 const Slider: React.FunctionComponent = () => {
   const style = dark;
+  //const [isFlipped, setFlip] = React.useState(false);
+  //const t = () => setFlip(!isFlipped);
   return (
     <AwesomeSlider className="slider" /*onTransitionEnd={handler} */>
       <div style={style.calculator} onClick={() => openGithub("wasm")}>
@@ -20,10 +24,8 @@ const Slider: React.FunctionComponent = () => {
         Online Arduino’s Emulator <br />
         From mini to UNO!
       </div>
-      <div style={style.coderbook} onClick={() => openGithub("coderbook")}>
-        <h1 className="header">Coderbook</h1>
-        I’m coauthor of Coder book - tutorial for coders. <br />
-        This app provides courses about programming languages.
+      <div>
+        <Tiles />
       </div>
     </AwesomeSlider>
   );

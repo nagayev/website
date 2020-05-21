@@ -1,10 +1,10 @@
 import React from "react";
 import ReactCardFlip from "react-card-flip";
-
-// import { Col, Grid, Row } from "react-flexbox-grid";
+import { Col, Grid, Row } from "react-flexbox-grid";
+/*
 const Col = "div";
 const Grid = "div";
-const Row = "div";
+const Row = "div"; */
 // react-flexbox-grid needs replacing, see
 // https://github.com/roylee0704/react-flexbox-grid/issues/173
 

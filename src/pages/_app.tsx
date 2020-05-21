@@ -2,6 +2,7 @@ import "react-awesome-slider/dist/styles.css";
 import "../ui/index.css";
 import "../ui/PageContentsForIndex.css";
 
+//import { Grid, Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid' //FIXME:
 import { AppProps } from "next/app";
 import Head from "next/head";
 import React from "react";
