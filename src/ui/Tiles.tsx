@@ -1,12 +1,6 @@
 import React from "react";
 import ReactCardFlip from "react-card-flip";
-import { Col, Grid, Row } from "react-flexbox-grid";
-/*
-const Col = "div";
-const Grid = "div";
-const Row = "div"; */
-// react-flexbox-grid needs replacing, see
-// https://github.com/roylee0704/react-flexbox-grid/issues/173
+import { Col, Grid, Row } from "react-flexbox-grid/dist/react-flexbox-grid";
 
 interface TileProps {
   active: string;
