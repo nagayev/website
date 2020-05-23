@@ -1,5 +1,6 @@
 import React from "react";
 import ReactCardFlip from "react-card-flip";
+// https://github.com/roylee0704/react-flexbox-grid/issues/173#issuecomment-628984004
 import { Col, Grid, Row } from "react-flexbox-grid/dist/react-flexbox-grid";
 
 interface TileProps {
