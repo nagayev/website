@@ -1,17 +1,22 @@
 [
   {
-    "name": "wasm",
-    "header": "Webassembly calculator",
-    "content": "Calculator, written in WASM with support of Posit Numbers."
+    "name": "coderbook",
+    "header": "CoderBook",
+    "content": "Tutorial for programmers"
   },
   {
-    "name": "arduino-emulator",
-    "header": "Arduino Emulator",
-    "content": "Online Arduino’s Emulator From mini to UNO!"
+    "name": "pm",
+    "header": "New package manager",
+    "content": "I'm currently working on new Package Managerfor linux"
   },
   {
     "name": "nenoy",
     "header": "Nenoy website",
     "content": "Site with posts with connection to geocoords."
+  },
+  {
+    "name": "",
+    "header": "Various contributions to open source projects",
+    "content": "Jimp, hightlight.js, grumpy, etc..."
   }
 ]

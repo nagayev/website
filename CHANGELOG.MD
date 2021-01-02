@@ -2,7 +2,12 @@
 
 ## Current
 
-Current version is 1.0.1 now.
+Current is 1.0.2 now
+
+## 1.0.2
+
+- Disable PageContentsForIndex's test
+- Delete Tiles.tsx and add new slide
 
 ## 1.0.1
 

@@ -3,7 +3,6 @@ import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 
 import dark from "./dark";
-//import Tiles from "./Tiles";
 
 const openGithub = (project: string) => {
   window.open(`https://github.com/nagayev/${project}`);
@@ -36,6 +35,13 @@ function Slider() {
     fetch("projects.json")
       .then((data) => data.json())
       .then((data) => {
+        /*const d = Array.from(data);
+        d.push(
+          <div>
+            <Tiles />
+          </div>,
+        );
+        console.log("data: ", d); */
         setProjects(data);
       })
       .catch((err) => console.error(err));

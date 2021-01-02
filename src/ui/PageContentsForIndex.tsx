@@ -29,7 +29,7 @@ const User: React.FunctionComponent<UserProps> = (props) => {
   } else if (props.type === "gitlab") {
     url += `gitlab.com/${props.id}`;
   } else if (props.type === "habr") {
-    url += `habr.com/ru/ids/${props.id}`;
+    url += `habr.com/users/${props.id}`;
   } else if (props.type === "stack") {
     url += `stackoverflow.com/users/8531190/${props.id}`;
   }
