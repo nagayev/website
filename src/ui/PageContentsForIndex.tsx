@@ -56,9 +56,9 @@ const PageContentsForIndex: NextPage = () => {
       <h1>Marat Nagayev</h1>
       <img id="me" src={me} alt="Marat Nagayev" style={style.me} />
       <div id="about" style={style.about}>
-        <p>Hello! I’m Marat Nagayev, frontend developer.</p>
-        <p>Original from Penza, Russia</p>
-        <p>Education: 2 Lyceum of Modern Technologyies, Penza</p>
+        <p>Hello! I’m Marat Nagayev, fullstack developer.</p>
+        <p>Originally from Penza, Russia</p>
+        <p>Education: Penza State University</p>
         <p>Love JavaScript, NodeJS and TypeScript.</p>
       </div>
       <br />
@@ -81,7 +81,7 @@ const PageContentsForIndex: NextPage = () => {
       </div>
 
       <div id="bottom">
-        nagayev.ru, 2019-2020 <br />
+        nagayev.ru, 2019-2021 <br />
         Source code are available{" "}
         <a style={style.a} href="https://github.com/nagayev/website">
           here
