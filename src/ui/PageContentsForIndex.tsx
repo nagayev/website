@@ -82,7 +82,7 @@ const PageContentsForIndex: NextPage = () => {
 
       <div id="bottom">
         nagayev.ru, 2019-2021 <br />
-        Source code are available{" "}
+        Source code is available{" "}
         <a style={style.a} href="https://github.com/nagayev/website">
           here
         </a>

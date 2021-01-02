@@ -1,15 +1,23 @@
 import React from "react";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
-const AutoPlayer = withAutoplay(AwesomeSlider);
+
 import dark from "./dark";
 //import Tiles from "./Tiles";
 
 const openGithub = (project: string) => {
   window.open(`https://github.com/nagayev/${project}`);
 };
+const AutoPlayer = withAutoplay(AwesomeSlider);
 
-function Slide(props) {
+type SlideProps = {
+  data: {
+    content: string;
+    header: string;
+    name: string;
+  };
+};
+function Slide(props: SlideProps) {
   const style = dark;
   const { data } = props;
   return (
@@ -38,7 +46,7 @@ function Slider() {
         <AutoPlayer
           play={true}
           cancelOnInteraction={false} // should stop playing on user interaction
-          interval={10000}
+          interval={4000}
         >
           {projects.map((item, i) => {
             return (

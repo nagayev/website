@@ -1,6 +1,7 @@
 {
+  "version": "1.0.1",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://github.com/nagayev/website/",
   "scripts": {
     "build": "next build",
     "dev": "next",

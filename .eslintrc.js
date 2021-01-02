@@ -40,7 +40,6 @@ module.exports = {
     "import/no-unresolved": "error",
     "import/named": "off", // https://github.com/benmosher/eslint-plugin-import/issues/1341
     "import/namespace": "error",
-
     "no-console": "error",
     "no-shadow": "error",
     "no-unused-vars": "off",
@@ -50,6 +49,7 @@ module.exports = {
     "react/prop-types": "off",
     "simple-import-sort/sort": "error",
     "sort-imports": "off",
+    "no-console": "off",
   },
   settings: {
     react: { version: "detect" },
