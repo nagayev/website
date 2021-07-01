@@ -26,15 +26,7 @@ const pageLayout: CSSProperties = {
 const languages: CSSProperties = {
   float: "right",
   marginRight: "5%",
-};
-const coderbook: CSSProperties = {
-  backgroundColor: "gray", //'rgb(255,38,67)'
-};
-const calculator: CSSProperties = {
-  backgroundColor: "darkgrey",
-};
-const arduino: CSSProperties = {
-  backgroundColor: "dimgray",
+  display: "none", //FIXME: it's temporary
 };
 const dots: CSSProperties = {
   textDecoration: "underline",
@@ -46,9 +38,6 @@ const dark = {
   pageLayout,
   me,
   languages,
-  coderbook,
-  calculator,
-  arduino,
   dots,
 };
 export default dark;
