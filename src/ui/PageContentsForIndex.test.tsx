@@ -1,12 +1,14 @@
-/*import React from "react";
-import ReactDOM from "react-dom";
+import cheerio from "cheerio";
+import fetch from "node-fetch";
 
-import PageContentsForIndex from "./PageContentsForIndex"; */
+function check(body) {
+  const cheer = cheerio.load(body);
+  expect(cheer("#__next").find("div")).toBeGreaterThan(0);
+}
 
-//FIXME:
-it("main page renders without crashing", () => {
-  /*
-  const div = document.createElement("div");
-  ReactDOM.render(<PageContentsForIndex />, div);
-  ReactDOM.unmountComponentAtNode(div); */
+it("SSR Loads with an HTML Body", () => {
+  const url = "localhost:3000";
+  fetch(url)
+    .then((res) => res.text())
+    .then((body) => check(body));
 });

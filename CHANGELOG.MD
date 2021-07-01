@@ -2,7 +2,7 @@
 
 ## Current
 
-Current is 1.0.3 now
+- Fix PageContentsForIndex's test
 
 ## 1.0.3
 
