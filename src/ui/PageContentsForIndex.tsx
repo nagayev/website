@@ -9,7 +9,15 @@ const getCurrentTheme = () => {
   return dark;
 };
 
-type UserType = "vk" | "fb" | "habr" | "gitlab" | "github" | "stack";
+type UserType =
+  | "vk"
+  | "fb"
+  | "habr"
+  | "gitlab"
+  | "github"
+  | "stack"
+  | "inst"
+  | "tg";
 
 interface UserProps {
   type: UserType;
@@ -19,20 +27,17 @@ interface UserProps {
 const User: React.FunctionComponent<UserProps> = (props) => {
   //type and id
   const style = getCurrentTheme();
-  let url = "https://";
-  if (props.type === "vk") {
-    url += `vk.com/${props.id}`;
-  } else if (props.type === "fb") {
-    url += `fb.com/profile.php?id=${props.id}`;
-  } else if (props.type === "github") {
-    url += `github.com/${props.id}`;
-  } else if (props.type === "gitlab") {
-    url += `gitlab.com/${props.id}`;
-  } else if (props.type === "habr") {
-    url += `habr.com/users/${props.id}`;
-  } else if (props.type === "stack") {
-    url += `stackoverflow.com/users/8531190/${props.id}`;
-  }
+  const contacts = {
+    vk: `vk.com/${props.id}`,
+    fb: `fb.com/${props.id}`,
+    github: `github.com/${props.id}`,
+    gitlab: `gitlab.com/${props.id}`,
+    habr: `habr.com/users/${props.id}`,
+    stack: `stackoverflow.com/users/8531190/${props.id}`,
+    inst: `instagram.com/${props.id}`,
+    tg: `telegram.me/${props.id}`,
+  };
+  const url = `https://${contacts[props.type]}`;
 
   return (
     <a style={style.a} href={url}>
@@ -69,12 +74,12 @@ const PageContentsForIndex: NextPage = () => {
       <div id="contacts">
         <h2>Contacts</h2>
         <p>
-          Social networks: <User type="vk" id="bestvkhacker" />{" "}
-          <User type="fb" id="100010223490380" />{" "}
-          <User type="habr" id="enmar" />
+          Contact me: <User type="vk" id="m_nagayev" />{" "}
+          <User type="inst" id="m_nagayev" /> <User type="habr" id="nagayev" />{" "}
+          <User type="tg" id="nagayev" />
         </p>
         <p>
-          Developer’s Sites: <User type="github" id="nagayev" />{" "}
+          My activity as a developer: <User type="github" id="nagayev" />{" "}
           <User type="gitlab" id="nagayev" /> &nbsp;
           <User type="stack" id="marat-nagayev" />
         </p>
