@@ -2,7 +2,15 @@
 
 ## Current
 
-Current is 1.0.2 now
+Current is 1.0.3 now
+
+## 1.0.3
+
+- fix links to my social networks
+- add new links: instagram & telegram
+- small refactoring
+- slider improvements
+- style improvements
 
 ## 1.0.2
 
