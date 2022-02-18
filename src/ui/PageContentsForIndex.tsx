@@ -86,7 +86,7 @@ const PageContentsForIndex: NextPage = () => {
       </div>
 
       <div id="bottom">
-        nagayev.ru, 2019-2021 <br />
+        nagayev.ru, 2019-2022 <br />
         Source code is available{" "}
         <a style={style.a} href="https://github.com/nagayev/website">
           here
