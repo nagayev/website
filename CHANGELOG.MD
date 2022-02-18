@@ -4,6 +4,7 @@
 
 - Fix PageContentsForIndex's test
 - Upgrade deps
+- Enable SWC as replacement for Babel
 
 ## 1.0.3
 
