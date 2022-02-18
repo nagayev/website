@@ -3,6 +3,7 @@
 ## Current
 
 - Fix PageContentsForIndex's test
+- Upgrade deps
 
 ## 1.0.3
 

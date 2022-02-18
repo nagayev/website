@@ -5,5 +5,8 @@ module.exports = require("next-compose-plugins")(
       autoPrerender: false,
     },
     reactStrictMode: true,
-  },
+    images: {
+    disableStaticImages: true
+  }
+  }
 );
