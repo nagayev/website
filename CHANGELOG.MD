@@ -5,6 +5,8 @@
 - Fix PageContentsForIndex's test
 - Upgrade deps
 - Enable SWC as replacement for Babel
+- Update copyright year
+- Fix issue with linting
 
 ## 1.0.3
 
