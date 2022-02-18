@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Current
+## 1.0.4
 
 - Fix PageContentsForIndex's test
 - Upgrade deps
