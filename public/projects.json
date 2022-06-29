@@ -1,13 +1,13 @@
 [
   {
+    "name": "js2cpp",
+    "header": "Javascript transcompiler",
+    "content": "I'm currently working on new JS to C++ transcompiler"
+  },
+  {
     "name": "coderbook",
     "header": "CoderBook",
     "content": "Tutorial for programmers"
-  },
-  {
-    "name": "pm",
-    "header": "New package manager",
-    "content": "I'm currently working on new Package Managerfor linux"
   },
   {
     "name": "nenoy",
@@ -17,6 +17,6 @@
   {
     "name": "",
     "header": "Various contributions to open source projects",
-    "content": "Jimp, hightlight.js, grumpy, etc..."
+    "content": "Reactos, jimp, hightlight.js, grumpy and many others"
   }
 ]
