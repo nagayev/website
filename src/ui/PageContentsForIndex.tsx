@@ -63,7 +63,8 @@ const PageContentsForIndex: NextPage = () => {
       <div id="about" style={style.about}>
         <p>Hello! I’m Marat Nagayev, fullstack developer.</p>
         <p>Originally from Penza, Russia</p>
-        <p>Education: Penza State University</p>
+        <p>Moved to Moscow, Russia</p>
+        <p>Education: Moscow Polytech</p>
         <p>Love JavaScript, NodeJS and TypeScript.</p>
       </div>
       <br />
