@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import React from "react";
 
 import dark from "./dark";
-import me from "./me.jpg";
+import me from "./me.png";
 import Projects from "./Projects";
 
 const getCurrentTheme = () => {
