@@ -5,9 +5,9 @@ const me: CSSProperties = {
   width: "100px",
   height: "100px",
   float: "right",
-  WebkitFilter: "grayscale(100%)",
+  /*WebkitFilter: "grayscale(100%)",
   msFilter: "grayscale(100%)",
-  filter: "grayscale(100%)",
+  filter: "grayscale(100%)",*/
 };
 const about: CSSProperties = {
   textAlign: "left",

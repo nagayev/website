@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Current
+
+- Update ico & avatar
+
 ## 1.0.4
 
 - Fix PageContentsForIndex's test
