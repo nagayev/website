@@ -1,12 +1,12 @@
 import { NextPage } from "next";
 import React from "react";
 
-import dark from "./dark";
+import style from "./style";
 import me from "./me.png";
 import Projects from "./Projects";
 
-const getCurrentTheme = () => {
-  return dark;
+function getCurrentTheme(){
+  return style;
 };
 
 type UserType =
@@ -47,7 +47,7 @@ const User: React.FunctionComponent<UserProps> = (props) => {
 };
 
 const PageContentsForIndex: NextPage = () => {
-  const style = dark;
+  const style = getCurrentTheme();
   return (
     <div style={style.pageLayout}>
       <div style={style.languages}>

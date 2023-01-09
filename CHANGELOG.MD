@@ -3,6 +3,7 @@
 ## Current
 
 - Update ico & avatar
+- Remove experimental theme support
 
 ## 1.0.4
 
